@@ -1,10 +1,10 @@
-import { Link } from "react-router"
+import { Link } from "react-router-dom"
 
 export default function ViaggioCard() {
     return (
         <>
             <div className="card h-100">
-                <img src="" alt="" className="card-img-top" />
+       
 
                 <div>
                     <h5 className="card-title">Destinazione viaggio</h5> 

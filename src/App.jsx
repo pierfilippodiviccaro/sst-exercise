@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "./layouts/AppLayout";
 import Home from "./pages/Home";
 import ViaggioDettagli from "./pages/ViaggioDettagli";
-import Contattaci from "./pages/Contattaci";
+import Viaggi from "./pages/viaggi";
 
 function App() {
 
@@ -14,8 +14,8 @@ function App() {
         <Routes>
           <Route element={<AppLayout />}>
             <Route element={<Home />} path="/" />
-            <Route element={<ViaggioDettagli />} path="/viaggio/:id" />
-            <Route element={<Contattaci />} path="/contattaci" />
+            <Route element={<Viaggi />} path="/viaggi" />
+            <Route element={<ViaggioDettagli/>} path="/viaggi/:id"/>
           </Route>
         </Routes>
       </BrowserRouter>
@@ -24,4 +24,4 @@ function App() {
   )
 }
 
-export default App()
+export default App;
