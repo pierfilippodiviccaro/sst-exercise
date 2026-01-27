@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "./layouts/AppLayout";
-import Home from "./pages/Home";
-import ViaggioDettagli from "./pages/ViaggioDettagli";
-import Viaggi from "./pages/viaggi";
+import Home from "./pages/home.jsx";
+import Dettagli from "./pages/Dettagli.jsx";
+
 
 function App() {
 
@@ -14,8 +14,7 @@ function App() {
         <Routes>
           <Route element={<AppLayout />}>
             <Route element={<Home />} path="/" />
-            <Route element={<Viaggi />} path="/viaggi" />
-            <Route element={<ViaggioDettagli/>} path="/viaggi/:id"/>
+            <Route element={<Dettagli/>} path="/:id"/>
           </Route>
         </Routes>
       </BrowserRouter>

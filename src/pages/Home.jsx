@@ -1,13 +1,33 @@
-import { viaggi } from "../db.js"
+import { viaggi, } from "../db.js"
+import ViaggioCard from "../components/ViaggioCard.jsx"
+
 export default function Home() {
-console.log(viaggi)
+
+
+
+
     return (
-       <>
-       
-       <h1>Questa è la pagina HOME, qui puoi inserire del contenuto miaoesco !!!</h1>
-       
-       </>
-       
+        <>
+            <h1 className="my-3">benvenuti nrlls miao corporation</h1>
+            <div className="">
+
+                <div className="">
+                    {viaggi.map((viaggio) => {
+                        
+                        return (
+                            <>
+                                <div>
+                                    <ViaggioCard key={viaggio.id} Viaggio={viaggio} />
+                                </div>
+                            </>
+
+                        )
+                    })}
+                </div>
+            </div>
+
+        </>
+
 
     )
 }
