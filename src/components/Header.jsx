@@ -11,7 +11,7 @@ export default function Header() {
     <>
 
       <header>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg navbar-expan bg-body-tertiary">
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/home">miao corporation</NavLink>
             <div className="collapse navbar-collapse" id="navbarNav">

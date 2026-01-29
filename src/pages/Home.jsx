@@ -8,7 +8,7 @@ export default function Home() {
 
     return (
         <>
-            <h1 className="my-3">benvenuti nrlls miao corporation</h1>
+            <h1 className="my-3">benvenuti nella miao corporation</h1>
             <div className="">
 
                 <div className="">
